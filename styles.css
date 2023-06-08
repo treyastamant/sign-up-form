@@ -1,0 +1,51 @@
+
+body {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.left-section, .right-section {
+  background-color: white;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  background: url("lemons.jpg");
+  background-size: cover; /* or "contain" depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+}
+
+.left-section p {
+  padding: 10px 100px;
+  background-color: white;
+  opacity: .7;
+}
+
+.right-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.right-section > * {
+  margin: 0px 40px;
+}
+
+form {
+  height: 300px;
+  border: solid 1px;
+  padding: 10px;
+}
