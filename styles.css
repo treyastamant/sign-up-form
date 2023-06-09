@@ -36,19 +36,19 @@ h2 {
 }
 
 .left-section p {
+  font-size: small;
   padding: 10px 40px;
-  background-color: white;
-  opacity: .7;
+  background-color: rgb(255, 255, 255, .6);
+  margin: 0px;
 }
 
 .logo {
-  margin-top: 150px;
+  margin-top: 165px;
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  background-color: olivedrab;
-  opacity: .8;
+  background-color: rgb(107, 142, 35, .6);
   height: 150px;
   padding: 20px;
 }
@@ -65,12 +65,41 @@ h2 {
   gap: 40px;
 }
 
-.right-section > * {
+.right-section p {
+  font-size: 16px;
+}
+
+.right-section a {
+  font-weight: bold;
+  text-decoration: none;
+  color: olivedrab;
+}
+
+.right-section > section, button, p {
   margin: 0px 40px;
 }
 
 form {
   height: 300px;
-  border: solid 1px;
-  padding: 10px;
+  background-color: rgb(107, 142, 35, .15);
+  padding: 10px 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.right-section button {
+  width: 230px;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: olivedrab;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.right-section button:hover {
+  box-shadow: rgba(99, 99, 99, 0.25) 1px 3px 8px 0px;
+  background-color: rgb(107, 142, 35, .95);
 }
