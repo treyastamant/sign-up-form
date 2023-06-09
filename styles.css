@@ -1,11 +1,20 @@
 
 body {
   display: flex;
-  width: 1200px;
+  width: 1300px;
   margin: auto;
-  background-color: black;
+  background-color: olivedrab;
   font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+  font-size: 105px;
+  color: white;
+}
+
+h2 {
+  font-weight: 500;
+}
+
 .left-section, .right-section {
   background-color: white;
   height: 100vh;
@@ -14,8 +23,8 @@ body {
 .left-section {
   flex: 2;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   background: url("lemons.jpg");
   background-size: cover; /* or "contain" depending on what you want */
@@ -27,9 +36,25 @@ body {
 }
 
 .left-section p {
-  padding: 10px 100px;
+  padding: 10px 40px;
   background-color: white;
   opacity: .7;
+}
+
+.logo {
+  margin-top: 150px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: olivedrab;
+  opacity: .8;
+  height: 150px;
+  padding: 20px;
+}
+
+.logo img {
+  height: inherit;
 }
 
 .right-section {
