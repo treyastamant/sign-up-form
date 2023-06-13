@@ -1,3 +1,8 @@
+:root {
+  --soft-green: rgb(107, 142, 35, .95);
+  --super-soft-green: rgb(107, 142, 35, .15);
+}
+
 
 body {
   display: flex;
@@ -81,7 +86,7 @@ h2 {
 
 form {
   height: 300px;
-  background-color: rgb(107, 142, 35, .15);
+  background-color: var(--super-soft-green);
   padding: 10px 40px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -101,5 +106,45 @@ form {
 
 .right-section button:hover {
   box-shadow: rgba(99, 99, 99, 0.25) 1px 3px 8px 0px;
-  background-color: rgb(107, 142, 35, .95);
+  background-color: var(--soft-green)
+}
+
+label, input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  background: none;
+  /* box-sizing: border-box; */
+  padding: 0px 5px;
+}
+
+input:focus {
+  border: 1px solid grey;
+  outline: 0;
+  box-shadow: rgba(99, 99, 99, 0.25) 1px 3px 8px 0px;
+}
+
+.group {
+  display: flex;
+  gap: 50px;
+}
+
+.subgroup {
+  padding: 10px 0px 16px 0px;
+}
+
+.error {
+  color: red;
 }
